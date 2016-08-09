@@ -46,6 +46,12 @@ For more information on all the things you can do with Feathers visit [docs.feat
 
 ## Changelog
 
+__0.1.1__
+
+- Initial Vue.js / vuex / vue-router frontend
+- Webpack development (HMR) / production configuration
+- Initial authentication vuex module with local auth strategy
+
 __0.1.0__
 
 - Initial Feathers / MongoDB application

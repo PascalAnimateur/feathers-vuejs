@@ -32,3 +32,7 @@ data/
 
 # Ignore WebStorm project files
 .idea
+
+# Ignore files built with webpack
+public/build
+public/index.html

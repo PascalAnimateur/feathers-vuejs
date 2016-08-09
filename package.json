@@ -1,7 +1,7 @@
 {
   "name": "feathers-vuejs",
   "description": "Feathers / Vue.js 2.0 / MongoDB full-stack boilerplate.",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "homepage": "",
   "main": "src/",
   "keywords": [
@@ -24,12 +24,19 @@
     "test": "npm run jshint && npm run mocha",
     "jshint": "jshint src/. test/. --config",
     "start": "node src/",
-    "mocha": "mocha test/ --recursive"
+    "mocha": "mocha test/ --recursive",
+    "postinstall": "rm -rf public/build public/index.html && webpack --config config/webpack.prod.js"
   },
   "dependencies": {
+    "autoprefixer": "^6.4.0",
+    "babel-loader": "^6.2.4",
+    "babel-preset-es2015": "^6.13.2",
+    "babel-preset-stage-1": "^6.13.0",
     "body-parser": "^1.15.2",
     "compression": "^1.6.2",
     "cors": "^2.7.1",
+    "css-loader": "^0.23.1",
+    "extract-text-webpack-plugin": "^2.0.0-beta.3",
     "feathers": "^2.0.1",
     "feathers-authentication": "^0.7.9",
     "feathers-configuration": "^0.2.3",
@@ -38,9 +45,21 @@
     "feathers-mongoose": "^3.5.1",
     "feathers-rest": "^1.4.3",
     "feathers-socketio": "^1.4.1",
+    "html-webpack-plugin": "^2.22.0",
     "mongoose": "^4.5.8",
     "passport": "^0.3.2",
+    "postcss-loader": "^0.9.1",
+    "progress-bar-webpack-plugin": "^1.9.0",
     "serve-favicon": "^2.3.0",
+    "style-loader": "^0.13.1",
+    "vue": "^2.0.0-beta.7",
+    "vue-loader": "^9.3.2",
+    "vue-router": "^2.0.0-rc.2",
+    "vuex": "^2.0.0-rc.4",
+    "vuex-router-sync": "^3.0.0",
+    "webpack": "^2.1.0-beta.20",
+    "webpack-dev-middleware": "^1.6.1",
+    "webpack-hot-middleware": "^2.12.2",
     "winston": "^2.2.0"
   },
   "devDependencies": {

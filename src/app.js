@@ -16,8 +16,20 @@ const services = require('./services');
 
 const app = feathers();
 
-app.configure(configuration(path.join(__dirname, '..')));
+// Configure webpack-dev-middleware with HMR
+if (process.env.NODE_ENV !== 'production') {
+  const webpack = require('webpack');
+  const config = require('../config/webpack.dev.js');
+  const compiler = webpack(config);
+  app.use(require('webpack-dev-middleware')(compiler, {
+    noInfo: true,
+    publicPath: config.output.publicPath
+  }));
+  app.use(require('webpack-hot-middleware')(compiler));
+}
 
+// Configure Feathers
+app.configure(configuration(path.join(__dirname, '..')));
 app.use(compress())
   .options('*', cors())
   .use(cors())
