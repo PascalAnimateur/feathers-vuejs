@@ -4,23 +4,30 @@
 
 ## About
 
-This project uses [Feathers](http://feathersjs.com). An open source web framework for building modern real-time applications.
+This project uses [Feathers](http://feathersjs.com) and [Vue.js](http://vuejs.org/) to provide an open source, full-stack boilerplate for building real-time applications.
 
 ## Getting Started
 
 Getting up and running is as easy as 1, 2, 3.
 
 1. Make sure you have [NodeJS](https://nodejs.org/) and [npm](https://www.npmjs.com/) installed.
-2. Install your dependencies
+2. Clone or fork this repo and install dependencies
     
     ```
-    cd path/to/feathers-vuejs; npm install
+    git clone https://github.com/PascalAnimateur/feathers-vuejs.git
+    cd feathers-vuejs
+    npm install
     ```
 
 3. Start your app
     
     ```
+    # Development
     npm start
+    
+    # Production
+    npm run postinstall
+    HOST=localhost PORT=3030 MONGODB_URI=mongodb://localhost:27017/FeathersVuejs npm start --prod
     ```
 
 ## Testing
@@ -43,6 +50,8 @@ $ feathers help                           # Show all commands
 ## Help
 
 For more information on all the things you can do with Feathers visit [docs.feathersjs.com](http://docs.feathersjs.com).
+
+While waiting for the official Vue.js 2.0 documentation, starter resources can be found [here](https://github.com/vuejs/vue/wiki/Vue-2.0-Beta---Starter-Resources). 
 
 ## Changelog
 
