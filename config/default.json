@@ -1,11 +1,11 @@
 {
   "host": "localhost",
   "port": 3030,
-  "mongodb": "mongodb://localhost:27017/feathersVuejs",
+  "mongodb": "mongodb://localhost:27017/FeathersVuejs",
   "public": "../public/",
   "auth": {
     "token": {
-      "secret": "NTqIbbNjWzJc2sTO4RibS6r0dX7KTED11wkjezDXgiMwF4Pajc4JXqD4VD0paztUiuUzJlPxeZuoGiJhpZNuqg=="
+      "secret": "FEATHERS_AUTH_SECRET"
     },
     "local": {}
   }

@@ -1,7 +1,7 @@
 {
-  "host": "feathers-vuejs-app.feathersjs.com",
-  "port": 80,
-  "mongodb": "DATABASE_URL",
+  "host": "HOST",
+  "port": "PORT",
+  "mongodb": "MONGODB_URI",
   "public": "../public/",
   "auth": {
     "token": {

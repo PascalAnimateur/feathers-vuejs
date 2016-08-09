@@ -48,7 +48,8 @@ For more information on all the things you can do with Feathers visit [docs.feat
 
 __0.1.0__
 
-- Initial release
+- Initial Feathers / MongoDB application
+- Configurable HOST, PORT, MONGODB_URI and FEATHERS_AUTH_SECRET in config/production.json
 
 ## License
 

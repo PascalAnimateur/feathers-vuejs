@@ -1,17 +1,22 @@
 {
   "name": "feathers-vuejs",
   "description": "Feathers / Vue.js 2.0 / MongoDB full-stack boilerplate.",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "homepage": "",
   "main": "src/",
   "keywords": [
     "feathers"
   ],
   "license": "MIT",
-  "repository": {},
-  "author": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/PascalAnimateur/feathers-vuejs.git"
+  },
+  "author": "Pascal Martineau <pascal.animateur@gmail.com>",
   "contributors": [],
-  "bugs": {},
+  "bugs": {
+    "url": "https://github.com/PascalAnimateur/feathers-vuejs/issues"
+  },
   "engines": {
     "node": ">= 0.12.0"
   },
