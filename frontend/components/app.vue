@@ -11,7 +11,8 @@
     created () {
       // Initial authentication ignoring errors
       this.authenticate()
-        .catch(err => {});
+        .catch(err => {
+        });
     }
   }
 </script>

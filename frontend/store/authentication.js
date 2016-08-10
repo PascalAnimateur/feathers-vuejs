@@ -1,4 +1,4 @@
-import feathers from '../feathers';
+import feathers from '../boot/feathers';
 
 const state = {
   token: null

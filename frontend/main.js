@@ -1,24 +1,9 @@
-import Vue from 'vue';
-import {sync} from 'vuex-router-sync';
-import feathers from './feathers';
-import router from './router';
-import store from './store';
-import App from './App.vue';
-
-// Global Feathers mixin
-Vue.mixin({
-  computed: {
-    $feathers () { return feathers; }
-  }
-});
-
-// Synchronize Vuex and vue-router
-sync(store, router);
+import {Vue, app, router, store} from './boot/core';
 
 // Create root Vue instance
-var vm = new Vue({
-  el: '#app',
+new Vue({
   router,
   store,
-  render: h => h(App)
+  el: '#app',
+  render: h => h(app)
 });
