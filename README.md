@@ -1,5 +1,7 @@
 # feathers-vuejs
 
+# DEPRECATED: Please see the updated code [here](https://github.com/lewebsimple/feathers-vuejs)
+
 > Feathers / Vue.js 2.0 / MongoDB full-stack boilerplate.
 
 ## About
